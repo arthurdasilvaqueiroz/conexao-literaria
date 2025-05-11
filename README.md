@@ -1,0 +1,1 @@
+<p>Esse é um projeto feito para a feira de empreendendorismo de nossa escola, o projeto se consiste em um site feito sem intuito monetário, visando ajudar pessoas que gostam de ler e atrair pessoas para a literatura, o site é feito em parceria com a biblioteca da escola, que fornecerá melhor os materiais da biblioteca para usarmos no site</p>
