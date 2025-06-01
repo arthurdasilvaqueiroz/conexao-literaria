@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Clube do Livro</title>
     <link rel="stylesheet" href="estilos/mobilefirst.css">
@@ -33,7 +34,7 @@
             <ol>
                 <li><a href="login.html" id="entrar">Participar do Clube</a></li>
                 <li><a href="livros.html" id="livros">Veja os Livros</a></li>
-                <li><a href="contato" id="contato">Entre em Contato</a></li>
+                <li><a href="#contato" id="entrar-em-contato">Entre em Contato</a></li>
             </ol>
         </nav>
 
@@ -45,7 +46,7 @@
             <div class="main-card">
               <h3>Livro do Mês</h3>
               <p><strong>Cem Anos de Solidão</strong></p>
-              <p id="Gabriel">Gabriel García Márquez</p>
+              <p class="autores">Gabriel García Márquez</p>
               <div class="stars">
                 <span class="material-symbols-outlined">star</span>
                 <span class="material-symbols-outlined">star</span>
@@ -60,7 +61,7 @@
           <!-- Destaques -->
 
       <section id="destaques">
-        <h2>Destaques</h2>
+        <h2 class="seçoes">Destaques</h2>
         <div class="grid grid-2">
           <div class="card">
             <h3>Livros Mais Comentados</h3>
@@ -92,7 +93,7 @@
           <!--Membros mais ativos-->
 
           <div class="card">
-            <h3>Membros Mais Ativos</h3>
+            <h3 class="seçoes">Membros Mais Ativos</h3>
             <ul>
               <li>
                 <div class="avatar-destaque">
@@ -129,13 +130,13 @@
           <!-- Sobre Nós -->
 
       <section id="sobre">
-        <h2>Sobre Nós</h2>
+        <h2 class="seçoes">Sobre Nós</h2>
         <div class="card">
           <div class="logo-sobre">
             <span class="material-symbols-outlined">import_contacts</span>
           </div>
           <h3>Nossa História</h3>
-          <p>
+          <p class="texto-sobre">
             O Clube do Livro nasceu em 2018,
             quando um pequeno grupo de
             amigos apaixonados por literatura
@@ -156,7 +157,7 @@
             duradouras.
             <div id="divisoria"></div>
           <h3>Nossa Missão</h3>
-          <p>
+          <p class="texto-sobre">
             Acreditamos no poder transformador
             da leitura e no valor das conexões
             humanas que surgem através das
@@ -174,33 +175,142 @@
           <!-- Eventos -->
 
       <section id="livros">
-        <h2>Livro do Mês</h2>
-        <div class="card">
-          <h3>Cem Anos de Solidão <span class="highlight">Livro Atual</span></h3>
-          <p>Gabriel García Márquez</p>
-          <p>Uma das obras mais importantes da literatura latino-americana...</p>
+        <h2 class="seçoes">Livro do Mês</h2>
+        <div class="area-LivroMes">
+          <div class="CapaDoLivro">
+              <h3 class="LivroMesCapa">Cem Anos de Solidão</h3>
+              <p class="AutorCapa">Gabriel García <br> Márquez</p>
+              <div class="DivisoriaCapa"></div>
+              <p id="ediçao">Edição Comemorativa</p>
+          </div>
         </div>
-        <h3 style="margin-top: 40px;">Livros Anteriores</h3>
-        <ul>
-          <li>O Morro dos Ventos Uivantes - Emily Brontë (Set 2023)</li>
-          <li>1984 - George Orwell (Ago 2023)</li>
-          <li>Dom Casmurro - Machado de Assis (Jul 2023)</li>
-          <li>Orgulho e Preconceito - Jane Austen (Jun 2023)</li>
-        </ul>
+        <div class="card">
+          <span class="highlight">Livro Atual</span>
+          <h3 id="LivroMes">Cem Anos de <br> Solidão</h3>
+          <div class="stars">
+            <span class="material-symbols-outlined">star</span>
+            <span class="material-symbols-outlined">star</span>
+            <span class="material-symbols-outlined">star</span>
+            <span class="material-symbols-outlined">star</span>
+            <span class="material-symbols-outlined">star</span>
+          </div>
+          <p class="autores">Gabriel García Márquez</p>
+          <p class="texto-sobre">
+          Uma das obras mais importantes da
+          literatura latino-americana, "Cem Anos
+          de Solidão" narra a história da família
+          Buendía ao longo de várias gerações
+          na fictícia cidade de Macondo. Com
+          elementos de realismo mágico, o
+          romance explora temas como solidão,
+          repetição e inevitabilidade do destino.
+          </p>
+          <p class="sobre-autor">Sobre o Autor</p>
+          <p class="texto-sobre">
+            Gabriel García Márquez (1927-2014) foi
+            um escritor colombiano, vencedor do
+            Prêmio Nobel de Literatura em 1982. É
+            considerado um dos expoentes do
+            realismo mágico e um dos autores mais
+            influentes do século XX.
+          </p>
+          <ul>
+            <li><a href="#" id="compartilhar-opniao">Compartilhar Opnião</a></li>
+            <li><a href="#" id="marcar-como-lido">Marcar como Lido</a></li>
+          </ul>
+        </div>
+
+        <!-- Livros Anteriores --> 
+
+        <div id="livros-anteriores">
+          <h3 class="seçoes">Livros Anteriores</h3>
+            <div class="area-LivroMes">
+              <div class="CapaDoLivro">
+                <h3 class="LivroMesCapa">O Morro dos Ventos Uivantes</h3>
+                <p class="AutorCapa">Emily Brontë</p>
+              </div>
+            </div>
+            <div class="card">
+              <h3 class="NomeLivrosAnteriores">O Morro dos Ventos Uivantes</h3>
+              <p class="AutoresLivrosAnteriores">Emily Brontë</p>
+              <a class="VerDetalhesLivro" href="#">Ver detalhes</a>
+            </div>
+            <div class="area-LivroMes">
+              <div class="CapaDoLivro">
+                <h3 class="LivroMesCapa">1984</h3>
+                <p class="AutorCapa">George Orwell</p>
+              </div>
+            </div>
+            <div class="card">
+              <h3 class="NomeLivrosAnteriores">1984</h3>
+              <p class="AutoresLivrosAnteriores">George Orwell</p>
+              <a class="VerDetalhesLivro" href="#">Ver detalhes</a>
+            </div>
+            <div class="area-LivroMes">
+              <div class="CapaDoLivro">
+                <h3 class="LivroMesCapa">Dom Casmurro</h3>
+                <p class="AutorCapa">Machado de Assis</p>
+              </div>
+            </div>
+            <div class="card">
+              <h3 class="NomeLivrosAnteriores">Dom Casmurro</h3>
+              <p class="AutoresLivrosAnteriores">Machado de Assis</p>
+              <a class="VerDetalhesLivro" href="#">Ver detalhes</a>
+            </div>
+            <div class="area-LivroMes">
+              <div class="CapaDoLivro">
+                <h3 class="LivroMesCapa">Orgulho e Preconceito</h3>
+                <p class="AutorCapa">Jane Austen</p>
+              </div>
+            </div>
+            <div class="card">
+              <h3 class="NomeLivrosAnteriores">Orgulho e Preconceito</h3>
+              <p class="AutoresLivrosAnteriores">Jane Austen</p>
+              <a class="VerDetalhesLivro" href="#">Ver detalhes</a>
+            </div>
+        </div>
+        <a href="#" class="Botao">Ver Todos os Livros</a>
       </section>
 
           <!-- Contato -->
 
       <section id="contato">
-        <h2>Fale Conosco</h2>
-        <p>Rua dos Livros, 123 - São Paulo, SP</p>
-        <p>(11) 5555-1234</p>
-        <p><a href="mailto:contato@clubedolivro.com">contato@clubedolivro.com</a></p>
-        <form>
-          <input type="text" name="nome" placeholder="Nome" required />
-          <input type="email" name="email" placeholder="E-mail" required />
-          <input type="text" name="assunto" placeholder="Assunto" required />
-          <textarea name="mensagem" rows="5" placeholder="Mensagem" required></textarea>
+        <h2 class="seçoes">Contato</h2>
+        <div id="area-contato">
+          <h3>Fale Conosco</h3>
+          <div class="contato-item">
+            <span class="material-symbols-outlined simbolos-contato">location_on</span>
+            <h4>Endereço</h4>
+          </div>
+          <p>Rua dos Livros, 123 <br> São Paulo, SP</p>
+          <div class="contato-item">
+            <span class="material-symbols-outlined simbolos-contato">call</span>
+            <h4>Telefone</h4>
+          </div>
+          <p>(11) 5555-1234</p>
+          <div class="contato-item">
+            <span class="material-symbols-outlined simbolos-contato">mail</span>
+            <h4>E-mail</h4>
+          </div>
+          <p><a href="mailto:contato@clubedolivro.com">contato@clubedolivro.com</a></p>
+        <h3>Redes Sociais</h3>
+        <ul id="redes-sociais">
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+          <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+        </div>
+        <form id="formulario-contato">
+          <h3>Envie uma Mensagem</h3>
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" required>
+
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
           <button type="submit">Enviar Mensagem</button>
         </form>
       </section>
@@ -209,11 +319,27 @@
           <!-- Rodapé -->
 
     <footer>
-      <div class="container">
-        <h2>Clube do Livro</h2>
-        <p>&copy; 2025 - Todos os direitos reservados</p>
+       <div class="logo container"">
+        <span class="material-symbols-outlined">import_contacts</span>
+        <h1 id="titulo-rodape">Clube do Livro</h1>
       </div>
+      <p>
+        Um espaço para amantes da literatura
+        compartilharem experiências e descobrirem
+        novas histórias.
+      </p>
+      <ul id="redes-sociais-rodape">
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+      </ul>
+      <h2>Links Rápidos</h2>
+      <ul id="links-rapidos">
+        <li><a href="#intro">Início</a></li>
+        <li><a href="#destaques">Destaques</a></li>
+        <li><a href="#sobre">Sobre Nós</a></li>
+        <li><a href="#livros">Livros do Mês</a></li>
+      </ul>
     </footer>
-
   </body>
 </html>
