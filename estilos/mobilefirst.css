@@ -48,6 +48,44 @@ header {
   justify-content: space-between;
 }
 
+header > nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: var(--secondary-font);
+  font-size: 1.2em;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-family: var(--secondary-font);
+  font-weight: bold;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #497CCA;
+  margin: 8px;
+  transition: 0.3s;
+}
+
 #titulo {
   font-size: 2em;
 }
@@ -90,38 +128,45 @@ li {
   padding: 20px 0px;
 }
 
-nav > ol > li > a {
+#botoes-home a {
   text-decoration: none;
   color: var(--background-color);
   border: #EEE7E7 solid 3px;
   border-radius: 10px;
 }
 
+li > a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-family: var(--secondary-font);
+  font-weight: bold;
+}
+
 li > a#entrar {
   background-color: #EEE7E7;
   color: var(--secondary-color);
-  padding: 10px 20px;
-  border-radius: 5px;
+  padding: 15px 20px;
+  border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.212) 4px 7px 2px;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 li > a#livros {
   background-color: var(--terciary-color);
   color: #EEE7E7;
-  padding: 10px 20px;
-  border-radius: 5px;
+  padding: 15px 20px;
+  border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.212) 4px 7px 2px;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 li > a#entrar-em-contato {
   background-color: var(--primary-color);
   color: #EEE7E7;
-  padding: 10px 20px;
-  border-radius: 5px;
+  padding: 15px 20px;
+  border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.212) 4px 7px 2px;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .card-wrapper {
@@ -135,7 +180,7 @@ li > a#entrar-em-contato {
 
 .card-wrapper h3 {
   font-family: var(--primary-font);
-  padding-top: 75px;
+  padding-top: 60px;
   font-size: 1.4em;
   color: var(--secondary-color);
   font-weight: bold;

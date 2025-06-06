@@ -9,6 +9,7 @@
     <title>Clube do Livro</title>
     <link rel="stylesheet" href="estilos/mobilefirst.css">
     <link rel="stylesheet" href="estilos/media-query.css">
+    <script defer src="javascript/menu.js"></script>
   </head>
   <body>
 
@@ -19,18 +20,30 @@
         <span class="material-symbols-outlined">import_contacts</span>
         <h1 id="titulo">Clube do Livro</h1>
       </div>
+       <nav>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Livro do Mês</a></li>
+          <li><a href="#">Conta</a></li>
+        </ul>
+      </nav>
     </header>
 
           <!-- Menu de Navegação -->
 
-    <main class="container">
+    <main>
       <section id="intro">
         <h2>Bem-vindo ao Clube do Livro</h2>
         <p>Um espaço para amantes da <br>
             literatura compartilharem <br>
             experiências, descobrirem novas <br>
             histórias e fazerem amizades.</p>
-        <nav>
+        <nav id="botoes-home">
             <ol>
                 <li><a href="login.html" id="entrar">Participar do Clube</a></li>
                 <li><a href="livros.html" id="livros">Veja os Livros</a></li>
