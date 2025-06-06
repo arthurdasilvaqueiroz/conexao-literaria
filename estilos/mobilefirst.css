@@ -89,7 +89,7 @@ main p {
 
 section {
   width: 100vw;
-  margin-left: calc(-50vw + 50%);
+  margin-left: calc(-51vw + 50%);
   padding: 20px 0;
 }
 
@@ -323,7 +323,6 @@ li > a#entrar-em-contato {
   background-color: white;
   color: var(--text-color);
   padding: 20px;
-  width: 450px;
   margin: auto;
 }
 
