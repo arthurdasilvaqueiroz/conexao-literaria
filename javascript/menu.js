@@ -6,15 +6,14 @@ class MobileNavbar {
     this.activeClass = "active";
 
     this.handleClick = this.handleClick.bind(this);
+    this.handleScroll = this.handleScroll.bind(this); // vincula o contexto
   }
 
   animateLinks() {
     this.navLinks.forEach((link, index) => {
       link.style.animation
         ? (link.style.animation = "")
-        : (link.style.animation = `navLinkFade 0.5s ease forwards ${
-            index / 7 + 0.3
-          }s`);
+        : (link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`);
     });
   }
 
@@ -24,13 +23,27 @@ class MobileNavbar {
     this.animateLinks();
   }
 
+  handleScroll() {
+    // Fecha o menu se ele estiver aberto
+    if (this.navList.classList.contains(this.activeClass)) {
+      this.navList.classList.remove(this.activeClass);
+      this.mobileMenu.classList.remove(this.activeClass);
+      this.animateLinks(); // reseta animação
+    }
+  }
+
   addClickEvent() {
     this.mobileMenu.addEventListener("click", this.handleClick);
+  }
+
+  addScrollEvent() {
+    window.addEventListener("scroll", this.handleScroll);
   }
 
   init() {
     if (this.mobileMenu) {
       this.addClickEvent();
+      this.addScrollEvent();
     }
     return this;
   }
@@ -39,6 +52,6 @@ class MobileNavbar {
 const mobileNavbar = new MobileNavbar(
   ".mobile-menu",
   ".nav-list",
-  ".nav-list li",
+  ".nav-list li"
 );
 mobileNavbar.init();

@@ -26,6 +26,7 @@ body {
   font-family: var(--secondary-font);
   line-height: 1.6;
   color: #333;
+  overflow-x: hidden;
 }
 
 #intro {
@@ -500,12 +501,14 @@ li > a#entrar-em-contato {
 .sobre-autor {
   color: var(--text-color);
   font-weight: bold;
+  padding: 10px;
 }
 
 .texto-sobre {
   font-size: 22px;
   font-weight: normal;
   text-align: justify;
+  padding: 10px;
 }
 
 #compartilhar-opniao {
@@ -808,7 +811,7 @@ footer > h2 {
   font-size: 1em;
   color: #EEE7E7;
   font-weight: normal;
-  padding: 10px 0px;
+  padding: 7px 7px;
   text-align: left;
 }
 
@@ -820,6 +823,7 @@ footer > h2 {
 
 #links-rapidos a {
   font-family: var(--secondary-font);
+  font-weight: 400;
   color: grey;
   text-decoration: none;
   text-align: left;
