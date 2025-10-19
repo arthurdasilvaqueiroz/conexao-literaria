@@ -16,21 +16,12 @@
           <!-- Cabeçalho -->
 
     <header>
-      <div class="logo container"">
+      <div class="logo container">
         <span class="material-symbols-outlined">import_contacts</span>
         <h1 id="titulo">Clube do Livro</h1>
       </div>
-       <nav>
-        <div class="mobile-menu">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
-        <ul class="nav-list">
-          <li><a href="#">Início</a></li>
-          <li><a href="#">Livros</a></li>
-          <li><a href="#">Conta</a></li>
-        </ul>
+      <nav>
+        
       </nav>
     </header>
 
@@ -76,13 +67,16 @@
       <section id="destaques">
         <h2 class="seçoes">Destaques</h2>
         <div class="grid grid-2">
-          <div class="card">
+
+          <!--Livros mais comentados-->
+
+          <div class="card caixa-destaques">
             <h3>Livros Mais Comentados</h3>
-            <ul>
+            <ul class="flex-destaque">
               <li>
               <strong>1</strong>
               <div class="livro-destaque">
-                <span class="nomelivro">O Morro dos Ventos Uivantes</span>
+                <span class="nomelivro">O Morro dos <br> Ventos Uivantes </span>
                 <p class="comentarios">128 comentários</p>
               </div>
               </li>
@@ -105,9 +99,9 @@
 
           <!--Membros mais ativos-->
 
-          <div class="card">
+          <div class="card caixa-destaques">
             <h3 class="seçoes">Membros Mais Ativos</h3>
-            <ul>
+            <ul class="flex-destaque">
               <li>
                 <div class="avatar-destaque">
                   <span class="material-symbols-outlined">account_circle</span>
@@ -123,7 +117,7 @@
                 </div>
                 <div>
                   <span class="destaque-usuarios">Carlos Mendes</span>
-                  <p class="destaque-resenhas">37 resenhas resenhas publicadas</p>
+                  <p class="destaque-resenhas">37 resenhas publicadas</p>
                 </div>
               </li>
               <li>
@@ -132,7 +126,7 @@
                 </div>
                 <div>
                   <span class="destaque-usuarios">Juliana Costa</span>
-                  <p class="destaque-resenhas">29 resenhas resenhas publicadas</p>
+                  <p class="destaque-resenhas">29 resenhas publicadas</p>
                 </div>
               </li>
             </ul>
@@ -173,8 +167,8 @@
 
       <section id="livros">
         <h2 class="seçoes">Livro do Mês</h2>
-        <div class="area-LivroMes">
-          <div class="CapaDoLivro">
+        <div class="area-LivroMes" id="areaEspecial">
+          <div class="CapaDoLivro" id="capaEspecial">
               <h3 class="LivroMesCapa">Cem Anos de Solidão</h3>
               <p class="AutorCapa">Gabriel García <br> Márquez</p>
               <div class="DivisoriaCapa"></div>
@@ -290,7 +284,7 @@
             <h4>E-mail</h4>
           </div>
           <p><a href="mailto:contato@clubedolivro.com">contato@clubedolivro.com</a></p>
-        <h3>Redes Sociais</h3>
+        <h3 id="screenPort">Redes Sociais</h3>
         <ul id="redes-sociais">
           <li><a href="#"><i class="fab fa-instagram"></i></a></li>
           <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
