@@ -1,199 +1,10 @@
 @charset "UTF-8";
 
-/* Estilos para celulares pequenos */
-
-@media only screen and (min-width: 320px) {
-
-  #titulo {
-    display: none;
-  }
-
-  #intro {
-    padding: 5px 20px 25px 20px;
-  }
-
-  #botoes-home {
-    display: none;
-  }
-
-  .card-wrapper {
-    display: none;
-  }
-
-  .card h3 {
-    font-size: 22px;
-  }
-
-
-  .seçoes {
-    font-size: 1.4em;
-  }
-
-  .logo-sobre { 
-    width: 150px;
-    height: 150px;
-  }
-
-  h3#LivroMes {
-    font-size: 1em;
-  }
-
-  #areaEspecial {
-    height: 300px;
-  }
-
-  #capaEspecial {
-    width: 180px;
-    height: 250px;
-  }
-
-  .highlight {
-    font-size: 0.8rem;
-  }
-
-  .material-symbols-outlined {
-    font-size: 18px;
-  }
-
-  #livros .autores {
-    font-size: 16px;
-    padding-top: 20px;
-  }
-
-  .texto-sobre {
-    font-size: 19px;
-  }
-
-  .area-LivroMes {
-    height: 250px;
-  }
-
-  .CapaDoLivro {
-    width: 170px;
-    height: 210px;
-    padding: 0px;
-  }
-  
-  .card {
-    padding: 15px;
-  }
-
-  #compartilhar-opniao{
-    font-size: 16px;
-    padding: 8px 12px;
-  }
-
-  #marcar-como-lido{
-    font-size: 16px;
-    padding: 8px 12px;
-  }
-
-  .Botao {
-      margin: 30px auto 20px auto;
-      font-size: 18px;
-      width: 220px;
-  }
-
-  #contato {
-    padding: 10px;
-  }
-
-  #area-contato {
-    height: 290px;
-    padding: 15px;
-  }
-
-  #area-contato > h3 {
-    font-size: 20px;
-    padding: 4px;
-  }
-
-  #area-contato > p {
-    font-size: 14px;
-    padding: 0px 0px 5px 20px;
-  }
-
-  .contato-item {
-    font-size: 20px;
-  }
-
-  #area-contato h4 {
-    font-size: 16px;
-  }
-
-  #redes-sociais {
-    display: none;
-  }
-
-  #screenPort {
-    display: none;
-  }
-
-  #formulario-contato {
-    width: 100%;
-    height: 450px;
-    margin-bottom: 20px;
-  }
-
-  #formulario-contato > h3 {
-    font-size: 20px;
- 
-  }
-
-  form label {
-    display: block;
-    margin: 0;
-    font-size: 18px;
-    color: var(--text-color);
-    font-family: var(--secondary-font);
-    font-weight: light;
-  }
-
-  form input, form textarea, form button {
-    width: 100%;
-    padding: 11px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 1rem;
-  }
-
-  footer {
-    padding: 10px;
-  }
-
-  footer .logo {
-    padding: 0px;
-  }
-
-  footer > p {
-    font-size: 1.2em;
-  }
-
-  footer h2 {
-    font-size: 1.2em;
-  }
-
-  #redes-sociais-rodape li a {
-    font-size: 1.8em;
-  }
-
-  #links-rapidos li {
-    font-size: 1em;
-  }
-}
-
-@media only screen and (min-width: 420px) {
-
-
-}
-
-/* Estilos para celulares grandes */
-
 @media only screen and (min-width: 600px) {
-    header {
-        background-color: lightblue;
-    }
+  header {
+    background-color: lightblue;
+  }
+
 }
 
 /* Estilos para tablets */
@@ -215,7 +26,17 @@
 /* Estilos para desktops */
 
 @media only screen and (min-width: 1200px) {
-    header {
-        background-color: lightgoldenrodyellow;
-    }
+  header {
+    background-color: lightgoldenrodyellow;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: var(--secondary-font);
+    font-size: 1.2em;
+  }
+
+  
 }

@@ -9,21 +9,33 @@
     <title>Clube do Livro</title>
     <link rel="stylesheet" href="estilos/mobilefirst.css">
     <link rel="stylesheet" href="estilos/media-query.css">
-    <script defer src="javascript/menu.js"></script>
   </head>
   <body>
 
           <!-- Cabeçalho -->
 
-    <header>
-      <div class="logo container">
-        <span class="material-symbols-outlined">import_contacts</span>
-        <h1 id="titulo">Clube do Livro</h1>
+  <header>
+    <div class="logo container">
+      <span class="material-symbols-outlined">import_contacts</span>
+      <h1 id="titulo">Clube do Livro</h1>
+    </div>
+    <div class="overlay"></div>
+    <nav>
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
       </div>
-      <nav>
-        
-      </nav>
-    </header>
+      <ul class="nav-list">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Livro do Mês</a></li>
+        <li><a href="#">Sobre nós</a></li>
+        <li><a href="#">Contato</a></li>
+        <li><a href="#">Perfil</a></li>
+      </ul>
+    </nav>
+  </header>
+  <script src="javascript/mobile-navbar.js"></script>
 
           <!-- Menu de Navegação -->
 
@@ -34,13 +46,6 @@
             literatura compartilharem <br>
             experiências, descobrirem novas <br>
             histórias e fazerem amizades.</p>
-        <nav id="botoes-home">
-            <ol>
-                <li><a href="login.html" id="entrar">Participar do Clube</a></li>
-                <li><a href="livros.html" id="livros">Veja os Livros</a></li>
-                <li><a href="#contato" id="entrar-em-contato">Entre em Contato</a></li>
-            </ol>
-        </nav>
 
           <!--Livro do Mês-->
 
