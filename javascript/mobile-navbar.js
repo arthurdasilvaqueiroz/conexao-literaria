@@ -23,7 +23,7 @@ class MobileNavbar {
   handleClick() {
     this.navList.classList.toggle(this.activeClass);
     this.mobileMenu.classList.toggle(this.activeClass);
-    this.overlay.classList.toggle(this.activeClass); // ativa ou desativa o fundo escuro
+    this.overlay.classList.toggle(this.activeClass);
     this.animateLinks();
   }
 
@@ -37,7 +37,6 @@ class MobileNavbar {
   addClickEvent() {
     this.mobileMenu.addEventListener("click", this.handleClick);
 
-    // permite fechar clicando fora do menu
     this.overlay.addEventListener("click", this.closeMenu);
   }
 
@@ -53,6 +52,6 @@ const mobileNavbar = new MobileNavbar(
   ".mobile-menu",
   ".nav-list",
   ".nav-list li",
-  ".overlay" // 👈 adicionamos o seletor do overlay
+  ".overlay"
 );
 mobileNavbar.init();
